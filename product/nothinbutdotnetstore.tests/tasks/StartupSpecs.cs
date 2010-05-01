@@ -18,6 +18,11 @@ namespace nothinbutdotnetstore.tests.tasks
         [Concern(typeof (Startup))]
         public class when_the_application_has_completed_its_startup : concern
         {
+            context c = () =>
+            {
+                
+
+            };
 
             because b = () =>
             {

@@ -1,3 +1,5 @@
+using System;
+
 namespace nothinbutdotnetstore.web.core
 {
     public class DefaultFrontController : FrontController
@@ -11,6 +13,8 @@ namespace nothinbutdotnetstore.web.core
 
         public void process(Request request)
         {
+            if (request == null) throw new ArgumentNullException();
+            if (command_registry == null) throw new ApplicationException();
             var command_that_can_handle_request = command_registry.get_command_that_can_handle(request);
             command_that_can_handle_request.process(request);
         }

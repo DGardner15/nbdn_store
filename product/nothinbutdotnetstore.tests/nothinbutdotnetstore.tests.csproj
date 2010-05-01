@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DF3A63F9-8783-4FDA-8A31-76667E114CEF}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -78,13 +78,16 @@
     <Compile Include="utility\empty_test_fixture_for_test_driven.cs" />
     <Compile Include="utility\ObjectMother.cs" />
     <Compile Include="web\AddProductToCartSpecs.cs" />
+    <Compile Include="web\FrontControllerResolver.cs" />
     <Compile Include="web\CommandRegistrySpecs.cs" />
+    <Compile Include="web\FrontControllerResolverSpecs.cs" />
     <Compile Include="web\DepartmentMapperSpecs.cs" />
     <Compile Include="web\PayloadKeySpecs.cs" />
     <Compile Include="web\ProductMapperSpecs.cs" />
     <Compile Include="web\RequestCommandSpecs.cs" />
     <Compile Include="web\FrontControllerSpecs.cs" />
     <Compile Include="web\RawHandlerSpecs.cs" />
+    <Compile Include="web\RequestFactoryResolverSpecs.cs" />
     <Compile Include="web\RequestFactorySpecs.cs" />
     <Compile Include="web\RequestSpecs.cs" />
     <Compile Include="web\ResponseEngineSpecs.cs" />

@@ -6,7 +6,7 @@ namespace nothinbutdotnetstore.web.core
     {
         public void process(Request request)
         {
-            throw new NotImplementedException();
+            new DefaultResponseEngine().display(request);
         }
 
         public bool can_handle(Request request)
